@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FreelancersForum</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+</head>
+<body>
+<div id="root">
+<h1>Welcome to Freelancers Forum Webpage!</h1>
+</div>
+  <script src="index.js"></script>
+  <script src="data.js"></script>
+  <script>
+    function main() 
+// Grab the "root" element
+const rootElement = document.getElementById("root");
+// Create an <h1> element and give it text of "FREELANCERS"
+const h1Element = document.createElement("h1");
+h1Element.textContent = "FREELANCERS";
+// Array of users
+const users = ["User 1", "User 2", "User 3"];
+ // Loop through the users array creating <li> elements
+users.forEach(user => {
+const liElement = document.createElement("li");
+liElement.textContent = user;
+ulElement.appendChild(liElement);
+      });
+      users.forEach(user => {
+        const liElement = document.createElement("li");
+        liElement.textContent = user;
+      });
+    // Call the main function when the page finishes loading
+    window.addEventListener("load", main);
+    main();
+
+    // Call the main function when the page is loaded
+    window.addEventListener("DOMContentLoaded", main);
+    main();
+    
+  </script>
+  </body>
+  </html>
